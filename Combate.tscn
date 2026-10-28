@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://ei0sl4umkg87"]
+
+[ext_resource type="Script" uid="uid://dy0paf45e6jo3" path="res://Combate.gd" id="1_3v68b"]
+
+[node name="Combate" type="Node2D" unique_id=106847643]
+script = ExtResource("1_3v68b")
+
+[node name="VidaActual" type="Label" parent="." unique_id=1498476942]
+offset_left = 64.0
+offset_top = 128.0
+offset_right = 320.0
+offset_bottom = 192.0
+
+[node name="Atacar" type="Button" parent="." unique_id=3282912]
+offset_left = 448.0
+offset_top = 384.0
+offset_right = 704.0
+offset_bottom = 512.0
+text = "Atacar"
+
+[node name="VidaEnemigo" type="Label" parent="." unique_id=2121010743]
+offset_left = 704.0
+offset_top = 128.0
+offset_right = 960.0
+offset_bottom = 192.0
+
+[connection signal="pressed" from="Atacar" to="." method="_on_atacar_pressed"]

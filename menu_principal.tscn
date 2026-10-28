@@ -1,0 +1,114 @@
+[gd_scene format=3 uid="uid://cb4rp5dn880ip"]
+
+[ext_resource type="Script" uid="uid://b7rxt8m2pk1s6" path="res://Menu_principal.gd" id="1_bj1uy"]
+[ext_resource type="Texture2D" uid="uid://oxvfruqp5gef" path="res://Personajes/Ken.png" id="2_a6518"]
+[ext_resource type="Texture2D" uid="uid://c6yi4i42r04e2" path="res://Personajes/Nawel.png" id="3_yxm4i"]
+[ext_resource type="Texture2D" uid="uid://cuubcncojyfo5" path="res://Personajes/Sun.png" id="4_b574n"]
+[ext_resource type="Texture2D" uid="uid://dju5ylt888ogd" path="res://Personajes/Josu.png" id="5_611wp"]
+[ext_resource type="Texture2D" uid="uid://ct4x6pfainjdy" path="res://Personajes/Nai.png" id="6_xpioy"]
+
+[node name="MenuPrincipal" type="Control" unique_id=145112710]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_bj1uy")
+
+[node name="TextoStats" type="Label" parent="." unique_id=1897200629]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 447.0
+offset_top = 64.0
+offset_right = -128.0
+offset_bottom = -456.0
+grow_horizontal = 2
+grow_vertical = 2
+autowrap_mode = 3
+
+[node name="TextoDescripcion" type="Label" parent="." unique_id=2015612397]
+layout_mode = 0
+offset_left = 447.0
+offset_top = 192.0
+offset_right = 960.0
+offset_bottom = 384.0
+autowrap_mode = 3
+
+[node name="Jugar" type="Button" parent="." unique_id=1105190822]
+layout_mode = 0
+offset_left = 448.0
+offset_top = 552.0
+offset_right = 704.0
+offset_bottom = 616.0
+text = "Jugar"
+
+[node name="Ken" type="TextureButton" parent="." unique_id=169468482]
+visible = false
+layout_mode = 0
+offset_left = 80.0
+offset_top = 192.0
+offset_right = 998.0
+offset_bottom = 1202.0
+scale = Vector2(0.4, 0.3)
+texture_normal = ExtResource("2_a6518")
+
+[node name="Nawel" type="TextureButton" parent="." unique_id=1127977180]
+visible = false
+layout_mode = 0
+offset_left = 56.0
+offset_top = 128.0
+offset_right = 416.0
+offset_bottom = 2678.0
+texture_normal = ExtResource("3_yxm4i")
+
+[node name="Sun" type="TextureButton" parent="." unique_id=429677194]
+visible = false
+layout_mode = 0
+offset_left = 63.999996
+offset_top = 47.999996
+offset_right = 1964.0
+offset_bottom = 2598.0
+scale = Vector2(0.2, 0.2)
+texture_normal = ExtResource("4_b574n")
+stretch_mode = 0
+
+[node name="Josu" type="TextureButton" parent="." unique_id=253186360]
+layout_mode = 0
+offset_left = 56.0
+offset_top = 120.0
+offset_right = 631.0
+offset_bottom = 2670.0
+scale = Vector2(0.7, 0.90000004)
+texture_normal = ExtResource("5_611wp")
+
+[node name="Nai" type="TextureButton" parent="." unique_id=1741633866]
+visible = false
+layout_mode = 0
+offset_left = 95.999985
+offset_top = 104.0
+offset_right = 456.0
+offset_bottom = 2654.0
+scale = Vector2(0.90000004, 1)
+texture_normal = ExtResource("6_xpioy")
+
+[node name="Izquierda" type="Button" parent="." unique_id=442321352]
+layout_mode = 0
+offset_top = 280.0
+offset_right = 64.0
+offset_bottom = 344.0
+text = "<"
+
+[node name="Derecha" type="Button" parent="." unique_id=227470571]
+layout_mode = 0
+offset_left = 1088.0
+offset_top = 280.0
+offset_right = 1152.0
+offset_bottom = 344.0
+text = ">"
+
+[connection signal="pressed" from="Jugar" to="." method="_on_Jugar_pressed"]
+[connection signal="pressed" from="Izquierda" to="." method="_ready"]
+[connection signal="pressed" from="Derecha" to="." method="_ready"]
