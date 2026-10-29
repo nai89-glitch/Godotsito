@@ -20,6 +20,13 @@ offset_right = -338.46146
 offset_bottom = 67.69231
 text = "Atacar"
 
+[node name="BtnActiva" type="Button" parent="." unique_id=753665346]
+unique_name_in_owner = true
+offset_left = -584.61536
+offset_top = -30.769226
+offset_right = -576.61536
+offset_bottom = -22.769226
+
 [node name="VidaEnemigo" type="Label" parent="." unique_id=2121010743]
 offset_left = -338.46143
 offset_top = -307.6923
@@ -110,6 +117,44 @@ text = "Reiniciar"
 unique_name_in_owner = true
 layout_mode = 2
 text = "Guardar"
+
+[node name="PanelRecompensa" type="PanelContainer" parent="HUD/Menu" unique_id=704340969]
+unique_name_in_owner = true
+offset_left = 550.1
+offset_top = 318.5
+offset_right = 550.1
+offset_bottom = 318.5
+
+[node name="OpcionesRecompensa" type="HBoxContainer" parent="HUD/Menu/PanelRecompensa" unique_id=131491122]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="Button" type="Button" parent="HUD/Menu/PanelRecompensa/OpcionesRecompensa" unique_id=1913814371]
+layout_mode = 2
+
+[node name="Button3" type="Button" parent="HUD/Menu/PanelRecompensa/OpcionesRecompensa" unique_id=1507633296]
+layout_mode = 2
+
+[node name="Button2" type="Button" parent="HUD/Menu/PanelRecompensa/OpcionesRecompensa" unique_id=700873994]
+layout_mode = 2
+
+[node name="PanelDerrota" type="PanelContainer" parent="HUD/Menu" unique_id=1265577748]
+unique_name_in_owner = true
+offset_left = 550.1
+offset_top = 318.5
+offset_right = 550.1
+offset_bottom = 318.5
+
+[node name="HBoxContainer" type="HBoxContainer" parent="HUD/Menu/PanelDerrota" unique_id=1219294791]
+layout_mode = 2
+
+[node name="BtnReiniciarDerrota" type="Button" parent="HUD/Menu/PanelDerrota/HBoxContainer" unique_id=1596902412]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="BtnInicioDerrota" type="Button" parent="HUD/Menu/PanelDerrota/HBoxContainer" unique_id=1780009180]
+unique_name_in_owner = true
+layout_mode = 2
 
 [node name="PanelHabilidades" type="PanelContainer" parent="HUD" unique_id=329502506]
 unique_name_in_owner = true
