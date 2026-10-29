@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://b7rxt8m2pk1s6" path="res://Menu_principal.gd" id="1_bj1uy"]
 [ext_resource type="Texture2D" uid="uid://oxvfruqp5gef" path="res://Personajes/Ken.png" id="2_a6518"]
 [ext_resource type="Texture2D" uid="uid://c6yi4i42r04e2" path="res://Personajes/Nawel.png" id="3_yxm4i"]
-[ext_resource type="Texture2D" uid="uid://cuubcncojyfo5" path="res://Personajes/Sun.png" id="4_b574n"]
+[ext_resource type="Texture2D" uid="uid://bw2uffj3wu8wj" path="res://Personajes/Sun.webp" id="4_a6518"]
 [ext_resource type="Texture2D" uid="uid://dju5ylt888ogd" path="res://Personajes/Josu.png" id="5_611wp"]
 [ext_resource type="Texture2D" uid="uid://ct4x6pfainjdy" path="res://Personajes/Nai.png" id="6_xpioy"]
 
@@ -65,17 +65,17 @@ offset_bottom = 2678.0
 texture_normal = ExtResource("3_yxm4i")
 
 [node name="Sun" type="TextureButton" parent="." unique_id=429677194]
-visible = false
 layout_mode = 0
-offset_left = 63.999996
-offset_top = 47.999996
-offset_right = 1964.0
-offset_bottom = 2598.0
+offset_left = 71.99999
+offset_top = 135.99998
+offset_right = 1972.0
+offset_bottom = 2686.0
 scale = Vector2(0.2, 0.2)
-texture_normal = ExtResource("4_b574n")
+texture_normal = ExtResource("4_a6518")
 stretch_mode = 0
 
 [node name="Josu" type="TextureButton" parent="." unique_id=253186360]
+visible = false
 layout_mode = 0
 offset_left = 56.0
 offset_top = 120.0
@@ -109,6 +109,5 @@ offset_right = 1152.0
 offset_bottom = 344.0
 text = ">"
 
-[connection signal="pressed" from="Jugar" to="." method="_on_Jugar_pressed"]
 [connection signal="pressed" from="Izquierda" to="." method="_ready"]
 [connection signal="pressed" from="Derecha" to="." method="_ready"]
